@@ -10,7 +10,7 @@ import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import { updateUser, getUser } from '@/lib/actionsUsers';
+import { updateUser, getUser } from '@/lib/server-actions/actionsUsers';
 
 export default async function SettingsPage() {
   const user = await getUser();
