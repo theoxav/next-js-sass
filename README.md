@@ -1,4 +1,31 @@
+# Notes Application
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Project Overview
+
+This application allows users to create, read, update, and delete notes. It includes authentication via Google and GitHub using NextAuth, and server actions to interact with the database.
+
+## Technologies Used
+
+- [TypeScript](https://www.typescriptlang.org) - Typed JavaScript
+
+- [Next.js](https://nextjs.org) - React framework for server-rendered applications
+- [NextAuth](https://next-auth.js.org) - Authentication for Next.js
+
+- [Prisma](https://www.prisma.io) - ORM for database management
+- [SQLite](https://www.sqlite.org) - Lightweight database engine
+
+- [TailwindCSS](https://tailwindcss.com) - Utility-first CSS framework
+- [shadcdn/ui](https://shadcdn.com) - UI components library
+
+## Authentication
+
+The application uses NextAuth for authentication, supporting login via Google and GitHub. This ensures secure and easy access for users.
+
+## Server Actions
+
+The application allows users to create, read, update, and delete notes. Server actions are implemented to retrieve, update, and create user information in the database. Additionally, server actions are used to create notes in the database. This allows for efficient data management and interaction with the backend.
 
 ## Getting Started
 
@@ -13,24 +40,3 @@ pnpm dev
 # or
 bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
